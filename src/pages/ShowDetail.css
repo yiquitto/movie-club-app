@@ -1,0 +1,144 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--text-secondary-color);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.details-box,
+.episodes-box {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px; /* iç boşluk */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.detail-poster {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.detail-info h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-meta .tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.detail-meta .rating-tag {
+  background-color: #22c55e; /* Yeşil */
+  color: #fff;
+}
+
+.detail-meta .lang-tag,
+.detail-meta .genre-tag,
+.detail-meta .status-tag {
+  background-color: #e9ecef;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary-color);
+}
+
+.detail-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-summary h2 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.episodes-box h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.episodes-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.episode-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.episode-item:last-child {
+  border-bottom: none;
+}
+
+.episode-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.episode-number {
+  color: var(--text-secondary-color);
+  font-weight: bold;
+}
+
+.episode-name {
+  color: var(--text-color);
+}
+
+.episode-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--text-secondary-color);
+}
+
+.source-button {
+  background-color: var(--primary-color);
+  color: #111;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.source-button:hover {
+  background-color: #e0b410;
+}

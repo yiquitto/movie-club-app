@@ -1,0 +1,43 @@
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.filters-footer {
+  display: flex;
+  justify-content: flex-end; /* Sağa hizalama */
+}
+.filters-body {
+  display: flex;
+  gap: 1rem;
+}
+
+.reset-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary-color);
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.reset-button:hover {
+  color: var(--primary-color);
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  /* Varsayılan ok simgesini göstermek için appearance: auto; olmalı veya hiç olmamalı */
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
+}
